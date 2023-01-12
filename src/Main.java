@@ -6,12 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Market market = new Market(5);
 
-        Farmer farmer = new Farmer("Francisco", 10, 5, market);
-        Client adrian = new Client("Adrian", 5, 5, market);
-        Client juan = new Client("Juan", 2, 5, market);
+        Farmer farmer = new Farmer("Farmer", 3, 5, market);
+        Client client = new Client("Client", 3, 5, market);
 
+        farmer.setPriority(3);
         farmer.start();
-        adrian.start();
-        juan.start();
+        client.start();
     }
 }
